@@ -8,3 +8,4 @@ Para poder acceder al video :
 - Acceda a la carpeta video en github.
 - dentro de la carpeta video va a estar un archivo mp4.
 - haga click en el archivo y luego en "view raw" para descargarlo.
+- Tambien puede acceder a este link https://vimeo.com/895970186 para acceder al video en VIMEO
