@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -158,23 +159,29 @@
   </div>
 
   <!--Formulario de inscripcion para ser orador-->
-  <div class="formulario" id="convierteteenorador">
+  <form class="formulario" id="convierteteenorador" action="SvOradores" method="POST">
     <div class="formulario-part1">
       <p>Conviertete en un</p>
       <h1>ORADOR</h1>
       <p>Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
     </div>
     <div class="formulario-part2">
-      <input type="text" placeholder="nombre" class="nombre">
-      <input type="text" placeholder="apellido" class="apellido">
+      <input type="text" placeholder="nombre" class="nombre" name="nombre" required>
+      <input type="text" placeholder="apellido" class="apellido" name="apellido" required>
     </div>
 
     <div class="formulario-part3">
-      <textarea placeholder="Sobre que quieres hablar?" class="sobre-que"></textarea>
+      <textarea placeholder="Sobre que quieres hablar?" class="sobre-que" name="sobreque" required></textarea>
       <p>Recuerda tener un titulo para tu charla</p>
-      <button type="reset">Enviar</button>
+      <button type="submit">Enviar</button>
     </div>
-  </div>
+  </form>
+  <br>
+  <form class="formulario" action="SvOradores" method="GET">
+      <div class="formulario-part3">
+          <button type="submit">Lista de oradores</button>
+      </div>
+  </form>
 
   <!--Pie de pagina para mas informacion-->
   <div class="footer">
